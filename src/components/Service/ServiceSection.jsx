@@ -1,64 +1,45 @@
 import React from 'react'
-import './ServiceSection.css'
+import ServiceDetails from './ServiceDetails'
+const serviceSectionObj = [
+  {
+    img: '/src/assets/Imgs/pic1.jpg',
+    title: 'Chemical Refinery',
+    desc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati commodi aliquid, temporibus quaerat veniam facere. Officiis maxime, maiores beatae explicabo labore placeat sit totam et esse iure natus necessitatibus.',
+  },
+  {
+    id: 1718,
+    img: '/src/assets/Imgs/pic1.jpg',
+    title: 'Alexa Khufanea',
+    desc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati commodi aliquid, temporibus quaerat veniam facere. Officiis maxime, maiores beatae explicabo labore placeat sit totam et esse iure natus necessitatibus.',
+  },
+  {
+    id: 1719,
+    img: '/src/assets/Imgs/pic1.jpg',
+    title: 'Jufuean Aheas',
+    desc:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati commodi aliquid, temporibus quaerat veniam facere. Officiis maxime, maiores beatae explicabo labore placeat sit totam et esse iure natus necessitatibus.',
+  },
+]
 
+const style = {
+  display: 'flex',
+  jsutifyContent: 'space-between',
+}
+const section = {
+  padding: '1rem',
+}
 const ServiceSection = () => {
   return (
-    <div className="service">
-      <h2 className="title">Our Service</h2>
-      <div className="service__container">
-        <div className="service__card">
-          <img
-            src="/src/assets/Imgs/pic1.jpg"
-            className="service__img"
-            alt=""
-          />
-          <div className="service__content">
-            <h1 className="service__title">Chemical Refinery</h1>
-            <p className="service__desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              possimus quo laudantium! Aliquam doloremque ullam, officiis,
-              nostrum totam nisi, dolore sequi deserunt nesciunt odit fugiat
-              maiores? Dolores nemo et voluptas!
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-        <div className="service__card">
-          <img
-            src="/src/assets/Imgs/pic2.jpg"
-            className="service__img"
-            alt=""
-          />
-          <div className="service__content">
-            <h1 className="service__title">Chemical Refinery</h1>
-            <p className="service__desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              possimus quo laudantium! Aliquam doloremque ullam, officiis,
-              nostrum totam nisi, dolore sequi deserunt nesciunt odit fugiat
-              maiores? Dolores nemo et voluptas!
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
-        <div className="service__card">
-          <img
-            src="/src/assets/Imgs/pic3.jpg"
-            className="service__img"
-            alt=""
-          />
-          <div className="service__content">
-            <h1 className="service__title">Chemical Refinery</h1>
-            <p className="service__desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              possimus quo laudantium! Aliquam doloremque ullam, officiis,
-              nostrum totam nisi, dolore sequi deserunt nesciunt odit fugiat
-              maiores? Dolores nemo et voluptas!
-            </p>
-            <button>Read More</button>
-          </div>
-        </div>
+    <>
+      <h2 style={section}>Our Service</h2>
+      <div style={style}>
+        {serviceSectionObj.map((details) => (
+          <ServiceDetails key={details.id} details={details} />
+        ))}
       </div>
-    </div>
+    </>
   )
 }
 

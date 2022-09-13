@@ -16,12 +16,12 @@
 .header__item {
   list-style-type: none;
   margin-left: 0.5rem;
-}
-.header__link {
   text-decoration: none;
   color: rgb(247, 244, 244);
   font-size: 1.2rem;
+  cursor: pointer;
 }
-.header__link:hover {
+
+.header__item:hover {
   color: rgb(255, 166, 0);
 }
