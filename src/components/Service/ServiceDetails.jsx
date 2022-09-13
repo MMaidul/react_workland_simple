@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../Ui/Button/Button'
 import './ServiceDetails.css'
 
 const ServiceDetails = ({ details }) => {
@@ -12,7 +13,7 @@ const ServiceDetails = ({ details }) => {
           <div className="service__content">
             <h1 className="service__title">{title}</h1>
             <p className="service__desc">{desc}</p>
-            <button>Read More</button>
+            <Button />
           </div>
         </div>
       </div>
