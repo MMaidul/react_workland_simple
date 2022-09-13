@@ -1,0 +1,33 @@
+.Banner {
+  background-image: url(/src/assets/Imgs/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Banner__title {
+  font-size: 3rem;
+}
+.Banner__desc {
+  width: 50%;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+button {
+  border: 1px solid orange;
+  outline: none;
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  color: #fff;
+  background-color: orange;
+}

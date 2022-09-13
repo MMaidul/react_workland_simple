@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 1rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.header__logo img {
+  width: 60%;
+}
+.header__menu {
+  display: flex;
+}
+.header__item {
+  list-style-type: none;
+  margin-left: 0.5rem;
+}
+.header__link {
+  text-decoration: none;
+  color: rgb(247, 244, 244);
+  font-size: 1.2rem;
+}
+.header__link:hover {
+  color: rgb(255, 166, 0);
+}

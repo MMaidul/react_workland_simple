@@ -1,0 +1,28 @@
+.about {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.about__img {
+  width: 40%;
+}
+.about__img img {
+  width: 100%;
+}
+.about__container {
+  width: 50%;
+  text-align: right;
+}
+
+.about__title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.about__subTitle {
+  font-size: 2rem;
+  padding: 0.7rem;
+}
+.about__desc {
+  padding-bottom: 1rem;
+}
